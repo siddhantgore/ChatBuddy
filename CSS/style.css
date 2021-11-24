@@ -39,3 +39,7 @@ input{
     background-color:rgb(207, 206, 206);
     width: 40%;
 }
+
+.btn{
+    cursor: pointer;
+}
