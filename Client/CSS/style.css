@@ -1,19 +1,48 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Roboto&display=swap');
+body{
+    background-color: lightblue;
+    font-family: 'Lato', sans-serif;
+}
+.home{
+    display: flex;
+}
 .container{
     margin: auto;
     display: block;
     color: purple;
     text-align: center;
-    max-width: 900px;
-    background-color: rgb(250, 126, 77);
-    height: 70vh;
+    width: 700px;
+    background-color: rgba(159, 57, 255, 0.657);
+    height: 80vh;
+    border-radius: 12px;
+    overflow-y: scroll;
+    font-size: 18px;
+    
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    color: purple;
+    width: 400px;
+    margin-right: 2px;
+    background-color: rgb(157, 64, 243);
+    height: 80vh;
     border-radius: 12px;
     overflow-y: scroll;
 }
-
+hr{
+    width: 300px;
+}
+.send{
+    text-align: left;
+}
 .message{
-    background-color: grey;
-    width: 24%;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
     padding: 8px;
     margin: 17px;
     border-radius: 12px;
@@ -29,17 +58,46 @@
     float: left;
     clear: both;
 }
-
-#send-container{
+.Center{
     text-align: center;
+    float:center;
+    clear: both;
+}
+#send-container{
+    text-align: right;
     padding-top: 2em;
+    margin-right: 10%;
 }
 
 input{
     background-color:rgb(207, 206, 206);
     width: 40%;
+    height: 18px;
 }
 
 .btn{
     cursor: pointer;
+    color: blue;
+    padding: 6px;
+    border-radius: 12px;
+    width: 80px;
 }
+
+@media only screen and (max-width: 850px) {
+    body {
+      background-color: lightblue;
+    }
+    .container2{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    #send-container{
+        text-align: center;
+        margin-right: 0;
+    }
+    input{
+        background-color:rgb(207, 206, 206);
+        width: 60%;
+    }
+  }
