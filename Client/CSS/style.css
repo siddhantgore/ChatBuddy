@@ -72,15 +72,21 @@ hr{
 input{
     background-color:rgb(207, 206, 206);
     width: 40%;
-    height: 18px;
+    height: 24px;
+    border: 2px solid rgb(72, 72, 250);
+    border-radius: 8px;
 }
-
+input:hover{
+    border: 2px solid rgb(250, 80, 80);
+}
 .btn{
     cursor: pointer;
-    color: blue;
-    padding: 6px;
+    color: purple;
+    padding: 4px;
     border-radius: 12px;
     width: 80px;
+    font-size: 16px;
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 850px) {
